@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de números a palabras.</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+
+    <main class="presentacion__contenido">
+
+        <div class="seccion__titulo__logo">
+            <div class="presentacion__logo">
+                <img class="Logo" src="./assets/Logo.png" alt="Logotipo">
+            </div>
+
+            <h1 class="presentacion__titulo">
+                CONVERTIDOR DE NÚMEROS A PALABRAS
+            </h1>
+
+            <h2 class="presentacion_subtitulo">
+                Esta herramienta te permite seleccionar un número entre 20 y 60, y la página devolverá el número
+                seleccionado escrito en texto en español.
+            </h2>
+        </div>
+
+        <section class="seccion_procedimiento">
+            <div class="seccion_izquierda">
+                <div class="slider-container">
+                    <p class="texto-seleccionarnumero">SELECCIONA UN NÚMERO ENTRE 20 Y 60</p>
+                    <input type="range" id="numSlider" min="20" max="60" value="20" oninput="mostrarNumero(this.value)">
+                    <div class="slider-value">
+                        <span id="valorActual">20</span>
+                    </div>
+                    <div class="range-labels">
+                        <span>20</span>
+                        <span>60</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="seccion_derecha">
+                <div class="resultado-container">
+                    <p id="numeroPalabras" class="numero-palabras">VEINTE</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>Desarrollado por Brenda Paola Navarro Alatorre</p>
+        </footer>
+
+        <script src="js/script.js"></script>
+
+    </main>
+</body>
+
+</html>

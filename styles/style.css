@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --color-primario: #0A3871;
+    --color-secundario: #343A40;
+    --color-terciario: #072B61;
+    --color-cuaternario: #F3F5FC;
+    --color-quinteario: #;
+    --color-hover: #31363F;
+
+    --white: #FFFFFF;
+
+    --fuente-montserrat: 'Montserrat', sans-serif;
+    --fuente-krona: 'Krona One', sans-serif;
+    --fuente-inter: 'Inter', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--color-cuaternario);
+    color: var(--color-primario);
+}
+
+.presentacion__contenido {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    height: 100%;
+}
+
+.seccion__titulo__logo {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    width: 100%;
+}
+
+.presentacion__logo {
+    width: 15%;
+    height: auto;
+    margin: 3% 5%;
+    margin-bottom: 0%;
+}
+
+.Logo {
+    max-width: 50%;
+    max-height: auto;
+    width: auto;
+    height: auto;
+}
+
+.presentacion__titulo {
+    font-size: 3rem;
+    font-family: var(--fuente-krona);
+    align-self: center;
+    margin: 1%;
+}
+
+.presentacion_subtitulo {
+    font-size: 1.4rem;
+    font-family: var(--fuente-inter);
+    font-weight: 400;
+    align-self: center;
+    margin: 1%;
+    text-align: center;
+    width: 60%;
+    height: 5%;
+    color: var(--color-secundario);
+}
+
+.seccion_procedimiento {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    height: 50vh;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.seccion_izquierda {
+    width: 50%;
+    height: auto;
+    align-content: center;
+    padding: 5%;
+}
+
+.slider-container {
+    position: relative;
+}
+
+
+.texto-seleccionarnumero {
+    margin-bottom: 20px;
+    align-self: center;
+    font-family: var(--fuente-inter);
+    font-weight: 800;
+    font-size: 1.7rem;
+    text-align: center;
+    color: var(--color-terciario);
+}
+
+.numeroPalabras {
+    margin-bottom: 20px;
+    align-self: center;
+    font-family: var(--fuente-inter);
+    font-weight: 800;
+    font-size: 1.7rem;
+    text-align: center;
+    color: var(--color-terciario);
+}
+
+input[type=range] {
+    -webkit-appearance: none; 
+    width: 100%;
+    height: 10px;
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .15s ease-in-out;
+}
+
+input[type=range] {
+    background: var(--color-terciario) !important;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--color-terciario);
+    cursor: pointer;
+}
+
+input[type=range]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider-value {
+    text-align: center;
+    font-size: 1rem;
+    color: var(--color-secundario);
+    position: absolute;
+    transform: translateX(-50%);
+    margin-top: 1%;
+    left: 50%;
+    font-family: var(--fuente-inter);
+    font-weight: 300;
+}
+
+.range-labels {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10%;
+}
+
+.range-labels span {
+    font-size: 1.2rem;
+    color: var(--color-secundario);
+    font-weight: 300;
+    font-family: var(--fuente-inter);
+}
+
+.seccion_derecha {
+    width: 50vh;
+    height: 25vh;
+    margin-left: 10%;
+    background-color: var(--white);
+    border-radius: 20px;
+    align-content: center;
+    text-align: center;
+    align-self: center;
+}
+
+.resultado-container {
+    padding: 1rem;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.numero-palabras {
+    font-family: var(--fuente-inter);
+    font-size: 1.3rem;
+    font-weight: 900;
+    text-align: center;
+    color: var(--color-terciario);
+    padding: 3%;
+}
+
+.footer {
+    text-decoration: none;
+    background-color: var(--color-terciario);
+    padding: 3%;
+    color: var(--color-cuaternario);
+    text-align: center;
+    font-family: var(--fuente-krona);
+    font-size: 1.5rem;
+    height: 10%;
+    width: 100%;
+    align-self: flex-end;
+}
