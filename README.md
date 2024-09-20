@@ -27,12 +27,6 @@ Para utilizar este proyecto, simplemente descarga los archivos y ábrelos en un 
 3. Usa el control deslizante para seleccionar un número entre 20 y 60.
 4. El número seleccionado aparecerá escrito en texto en español.
 
-## Contribución
-Si deseas contribuir al proyecto, siéntete libre de abrir un "issue" o enviar un "pull request".
-
-## Licencia
-Este proyecto no tiene una licencia específica. Siéntete libre de usarlo y modificarlo como desees.
-
 ## Contacto
 Desarrollado por **Brenda Paola Navarro Alatorre**.
 - Correo: [bpna16100224@gmail.com](mailto:brenda@example.com)
